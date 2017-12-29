@@ -81,6 +81,10 @@
                                     <action selector="btnNextPress:" destination="S4R-Ja-viH" eventType="touchUpInside" id="8Gf-WB-bBE"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="qvq-O5-1xF">
+                                <rect key="frame" x="176" y="629" width="23" height="37"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.23811380154137926" green="1" blue="0.92950209173793097" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -92,16 +96,19 @@
                             <constraint firstItem="Lc2-61-BjP" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" id="KUl-f6-iLK"/>
                             <constraint firstItem="Lc2-61-BjP" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" constant="2.5" id="SAB-Cx-hTW"/>
                             <constraint firstItem="wyu-wX-LVq" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" id="XWa-ZK-5c0"/>
+                            <constraint firstItem="qvq-O5-1xF" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="Y0w-GO-uoh"/>
                             <constraint firstItem="XEf-1B-Qlk" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="25" id="apX-mW-vxX"/>
                             <constraint firstItem="XEf-1B-Qlk" firstAttribute="top" secondItem="Lc2-61-BjP" secondAttribute="bottom" constant="10" id="bka-Fc-jKv"/>
                             <constraint firstAttribute="trailing" secondItem="Ofo-KS-cPu" secondAttribute="trailing" id="i99-31-PKx"/>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="Ofo-KS-cPu" secondAttribute="bottom" id="y02-dp-DjI"/>
+                            <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="qvq-O5-1xF" secondAttribute="bottom" constant="1" id="y0D-OR-Pdd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="Ofo-KS-cPu" id="Srl-SU-c6j"/>
                         <outlet property="imgView" destination="1P5-8S-wiP" id="TXF-Qt-CVd"/>
                         <outlet property="mainTitle" destination="Lc2-61-BjP" id="t6y-60-PnR"/>
+                        <outlet property="pagecontl" destination="qvq-O5-1xF" id="7s7-GX-yyq"/>
                         <outlet property="subTitle" destination="XEf-1B-Qlk" id="rld-WW-Yj3"/>
                     </connections>
                 </viewController>
